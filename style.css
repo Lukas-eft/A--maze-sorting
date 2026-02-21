@@ -1,0 +1,117 @@
+*{
+    --bg-dark: #1a1c1e;
+    --card-bg: #212427;
+    --accent-green: #7ed37e;
+    --btn-gray: #545b64;
+    --text-white: #ffffff;
+    --text-dim: #a0a8b1;
+    --cell-empty: #2c3136;
+}
+
+body{
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: -apple-system, system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-card{
+    background: var(--card-bg);
+    padding: 40px 60px;
+    border-radius: 17px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+h1 span{
+    color: var(--accent-green);
+    font-weight: 400;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(20, 22px);
+    grid-template-rows: repeat(20, 22px);
+    gap: 4px;
+    justify-content: center;
+    margin-bottom: 35px;
+    user-select: none;
+}
+
+.cell{
+    width: 22px;
+    height: 22px;
+    background: var(--cell-empty);
+    border-radius: 2px;
+}
+
+.wall{
+    background: #000000;
+}
+
+.start{
+    background: #4a9eff;
+}
+
+.target{
+    background: #ff4757;
+}
+
+.open{
+    background: rgba(126, 211, 126, 0.15);
+}
+
+.closed{
+    background: rgba(74, 158, 255, 0.05);
+}
+
+.path{ 
+    background: var(--accent-green) !important;
+    transform: scale(0.9);
+}
+
+.controls{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-green{
+    background: var(--accent-green);
+    color: #1a1c1e;
+}
+
+.btn-gray{
+    background: var(--btn-gray);
+    color: white;
+}
+
+.btn:hover{
+    opacity: 0.85;
+}
+
+.status-text{
+    margin-top: 25px;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+}
