@@ -2,6 +2,7 @@
 ### Developed by lukas-eft
 
 A high-performance pathfinding visualizer built with vanilla JavaScript. This tool demonstrates the efficiency of the A* search algorithm through a clean, grid-based interface. The design focuses on a flat, matte aesthetic to match professional algorithm visualizers.
+<img width="1918" height="993" alt="Screenshot 2026-02-21 225907" src="https://github.com/user-attachments/assets/cf7e5f7f-5cfa-46a5-9d36-711a627a76e1" />
 
 ## Project Overview
 
